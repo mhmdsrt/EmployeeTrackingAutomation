@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3E42832-90B7-416C-B003-28C12088AE4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ders32_personelkayitProjesi</RootNamespace>
+    <AssemblyName>ders32_personelkayitProjesi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Ana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Ana.Designer.cs">
+      <DependentUpon>Form_Ana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_giris.Designer.cs">
+      <DependentUpon>form_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_grafikler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_grafikler.Designer.cs">
+      <DependentUpon>form_grafikler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_istatistik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_istatistik.Designer.cs">
+      <DependentUpon>Form_istatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelTakipSistemiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonelTakipSistemiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PersonelTakipSistemiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonelTakipSistemiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Personel_Veri_TabaniDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Personel_Veri_TabaniDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Ana.resx">
+      <DependentUpon>Form_Ana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_giris.resx">
+      <DependentUpon>form_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_grafikler.resx">
+      <DependentUpon>form_grafikler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_istatistik.resx">
+      <DependentUpon>Form_istatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="PersonelTakipSistemiDataSet.xsc">
+      <DependentUpon>PersonelTakipSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PersonelTakipSistemiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PersonelTakipSistemiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PersonelTakipSistemiDataSet.xss">
+      <DependentUpon>PersonelTakipSistemiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PersonelTakipSistemiDataSet1.xsc">
+      <DependentUpon>PersonelTakipSistemiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="PersonelTakipSistemiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PersonelTakipSistemiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PersonelTakipSistemiDataSet1.xss">
+      <DependentUpon>PersonelTakipSistemiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Personel_Veri_TabaniDataSet.xsc">
+      <DependentUpon>Personel_Veri_TabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Personel_Veri_TabaniDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Personel_Veri_TabaniDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Personel_Veri_TabaniDataSet.xss">
+      <DependentUpon>Personel_Veri_TabaniDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
