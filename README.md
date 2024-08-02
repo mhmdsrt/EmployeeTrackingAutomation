@@ -1,5 +1,5 @@
  # EmployeeTrackingAutomation
-C# Employee Tracking System with desktop application.
+C# Employee Tracking System with Desktop Application.
 
 ![Ekran Görüntüsü (27)](https://github.com/mhmdsrt/PersonnelTrackingAutomation/assets/164398109/79f2f0dc-6d92-4c56-a0f0-879e309386e4)
 
